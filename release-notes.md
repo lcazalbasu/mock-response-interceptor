@@ -1,0 +1,5 @@
+# [version]: # (1.0.0)
+# [date]: # (2020-01-01)
+# [description]: # (Initial release)
+- [Task Type] # (feature, bugfix, hotfix, etc.) 
+    - [Task ID] - [Task description] # (- APS-123 - Add new feature)
