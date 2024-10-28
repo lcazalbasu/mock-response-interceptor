@@ -1,6 +1,7 @@
 # mock-response-interceptor
 
-An OkHttp interceptor that replaces HTTP responses with mock ones
+The [MockResponseInterceptor] is an OkHttp interceptor that allows you to mock the response of a
+request.
 
 If you are using the [MockResponseInterceptor] in a test environment,
 you can use the **[Mock] annotation to enable or disable the mock response**.
