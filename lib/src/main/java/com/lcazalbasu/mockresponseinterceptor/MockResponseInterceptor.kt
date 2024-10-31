@@ -12,6 +12,7 @@ import retrofit2.Invocation
 
 /**
  * Interceptor that provides mock responses for Retrofit requests.
+ * !!! IMPORTANT !!! Set this interceptor as the last interceptor in the OkHttpClient chain.
  *
  * @param context The context used to read the mock response from the assets folder.
  *

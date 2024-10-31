@@ -18,8 +18,8 @@ package com.lcazalbasu.apps.buildlogic
 
 object AppVersions {
     const val MIN_SDK = 21
-    const val COMPILE_SDK = 34
-    const val TARGET_SDK = 34
+    const val COMPILE_SDK = 35
+    const val TARGET_SDK = 35
 
     const val VERSION_CODE = 1
     const val VERSION_NAME = "1.0.0"

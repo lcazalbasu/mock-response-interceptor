@@ -6,7 +6,7 @@ package com.lcazalbasu.mockresponseinterceptor
  */
 @Target(AnnotationTarget.FUNCTION)
 @Retention(AnnotationRetention.RUNTIME)
-annotation class Mock(val enabled: Boolean)
+annotation class Mock(val enabled: Boolean = true)
 
 /**
  * Annotation to define a mock response headers for a retrofit API call.

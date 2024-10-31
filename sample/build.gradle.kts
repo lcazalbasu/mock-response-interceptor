@@ -1,6 +1,9 @@
+import com.lcazalbasu.apps.buildlogic.AppVersions
+
 plugins {
     alias(libs.plugins.defined.android.application)
     alias(libs.plugins.defined.android.application.compose)
+    alias(libs.plugins.defined.android.hilt)
 }
 
 android {
@@ -8,8 +11,8 @@ android {
 
     defaultConfig {
         applicationId = "com.lcazalbasu.mockresponseinterceptor"
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = AppVersions.VERSION_CODE
+        versionName = AppVersions.VERSION_NAME
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -26,9 +29,6 @@ android {
             )
         }
     }
-    buildFeatures {
-        compose = true
-    }
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
@@ -38,17 +38,24 @@ android {
 
 dependencies {
 
+    implementation(project(":lib"))
+
+    implementation(libs.gson)
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.gson)
+    implementation(libs.okhttp3.okhttp)
+    implementation(libs.okhttp3.logging)
+
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.navigation.hilt)
+
+    implementation(libs.bundles.coil)
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
-    implementation(platform(libs.androidx.compose.bom))
-    implementation(libs.androidx.ui)
-    implementation(libs.androidx.ui.graphics)
-    implementation(libs.androidx.ui.tooling.preview)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
-    debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 }

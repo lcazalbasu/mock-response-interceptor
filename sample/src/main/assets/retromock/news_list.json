@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Innovative Solutions Inc.",
+    "subtitle": "Empowering Your Digital Future",
+    "thumb": "https://picsum.photos/100?nr=1",
+    "category": "Innovation",
+    "shortDescription": "We specialize in cutting-edge software solutions, delivering unparalleled innovation and efficiency to businesses worldwide."
+  },
+  {
+    "id": 2,
+    "title": "TechGenius Technologies",
+    "subtitle": "Driving Digital Transformation",
+    "thumb": "https://picsum.photos/100?nr=2",
+    "category": "Digital",
+    "shortDescription": "Transforming businesses with advanced software solutions, paving the way for a smarter future."
+  },
+  {
+    "id": 3,
+    "title": "Infinite Innovations",
+    "subtitle": "Revolutionizing the Digital Landscape",
+    "thumb": "https://picsum.photos/100?nr=3",
+    "category": "Innovation",
+    "shortDescription": "Pushing the boundaries of possibility through groundbreaking software innovations."
+  },
+  {
+    "id": 4,
+    "title": "CodeCrafters Co.",
+    "subtitle": "Crafting Digital Experiences",
+    "thumb": "https://picsum.photos/100?nr=4",
+    "category": "Code",
+    "shortDescription": "We build custom software solutions tailored to enhance user experiences and drive business growth."
+  },
+  {
+    "id": 5,
+    "title": "Digital Dynamics Solutions",
+    "subtitle": "Elevating Digital Capabilities",
+    "thumb": "https://picsum.photos/100?nr=5",
+    "category": "Digital",
+    "shortDescription": "Empowering businesses with dynamic software solutions to adapt and thrive in the digital age."
+  },
+  {
+    "id": 6,
+    "title": "NextGen Innovations",
+    "subtitle": "Pioneering Tomorrow's Tech",
+    "thumb": "https://picsum.photos/100?nr=6",
+    "category": "Innovation",
+    "shortDescription": "Leading the charge in innovative software development, shaping the future of technology."
+  },
+  {
+    "id": 7,
+    "title": "DigitalDreams Technologies",
+    "subtitle": "Dream, Innovate, Achieve",
+    "category": "Digital",
+    "thumb": "https://picsum.photos/100?nr=7",
+    "shortDescription": "Turning dreams into reality with visionary software solutions that drive success and growth."
+  },
+  {
+    "id": 8,
+    "title": "ByteBuilders Solutions",
+    "subtitle": "Building Blocks of Digital Excellence",
+    "category": "Code",
+    "thumb": "https://picsum.photos/100?nr=8",
+    "shortDescription": "Crafting robust software solutions that form the foundation for digital excellence and innovation."
+  },
+  {
+    "id": 9,
+    "title": "CodeTech Innovations",
+    "subtitle": "Empowering Code through Code",
+    "category": "Code",
+    "thumb": "https://picsum.photos/100?nr=9",
+    "shortDescription": "Fueling innovation with cutting-edge technology solutions designed to unlock new possibilities."
+  },
+  {
+    "id": 10,
+    "title": "Digital Visionary Ventures",
+    "subtitle": "Envision, Create, Innovate, Digitalize",
+    "thumb": "https://picsum.photos/100?nr=10",
+    "category": "Digital",
+    "shortDescription": "Bringing visionary ideas to life through innovative software solutions that shape the future."
+  }
+]
