@@ -25,7 +25,9 @@ class NewsListViewModel @Inject constructor(
 
     private fun loadNews() = launchIO {
         _state.update { _state.value.copy(isLoading = true) }
-        when (val resource = loadNewsListUseCase.run()) {
+        val resource = loadNewsListUseCase.run()
+        delay(2000)
+        when (resource) {
             is Resource.Error ->
                 _state.update {
                     _state.value.copy(
@@ -41,7 +43,6 @@ class NewsListViewModel @Inject constructor(
                 )
             }
         }
-        delay(3000)
         _state.update { _state.value.copy(isLoading = false) }
     }
 

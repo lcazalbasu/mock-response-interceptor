@@ -1,5 +1,8 @@
+import com.lcazalbasu.apps.buildlogic.AppVersions
+
 plugins {
     alias(libs.plugins.defined.android.library)
+    id("maven-publish")
 }
 
 android {
@@ -15,7 +18,7 @@ android {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                "proguard-rules.pro",
             )
         }
     }
@@ -25,4 +28,17 @@ dependencies {
 
     implementation(libs.retrofit)
     implementation(libs.okhttp3.okhttp)
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from(components.findByName("release"))
+                groupId = "com.lcazalbasu"
+                artifactId = "mockresponseinterceptor"
+                version = AppVersions.VERSION_NAME
+            }
+        }
+    }
 }
