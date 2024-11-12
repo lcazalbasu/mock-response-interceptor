@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MockResponseInterceptor</string>
+
+    <string name="label_error_title">Error</string>
+    <string name="label_close">Close</string>
+    <string name="label_retry">Retry</string>
+</resources>
