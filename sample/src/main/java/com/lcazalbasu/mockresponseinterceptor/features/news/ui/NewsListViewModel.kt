@@ -26,7 +26,7 @@ class NewsListViewModel @Inject constructor(
     private fun loadNews() = launchIO {
         _state.update { _state.value.copy(isLoading = true) }
         val resource = loadNewsListUseCase.run()
-        delay(2000)
+        delay(1000)
         when (resource) {
             is Resource.Error ->
                 _state.update {

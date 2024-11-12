@@ -13,26 +13,24 @@ import retrofit2.http.Path
 interface ApiService {
 
     @Mock
-    @MockResponseFileBody(
-        fileBodyPath = "retromock/news_list.json",
-    )
+    @MockResponseFileBody(fileBodyPath = "responses/news_list_200.json")
     @GET("/api/news/list")
     suspend fun getNewsListResponseOk(): List<NewsResponse>
 
     @Mock
-    @MockResponseFileBody(fileBodyPath = "retromock/news_list.json")
     @MockResponseCode(500)
     @MockResponseMessage("Internal Server Error")
+    @MockResponseFileBody(fileBodyPath = "responses/news_list_500.json")
     @GET("/api/news/list")
     suspend fun getNewsListResponseError(): List<NewsResponse>
 
     @Mock
     @RandomMockResponseFileBody(
         randomFileBodyPath = [
-            "retromock/news_detail_1.json",
-            "retromock/news_detail_2.json",
-            "retromock/news_detail_3.json",
-            "retromock/news_detail_4.json",
+            "responses/news_detail_1.json",
+            "responses/news_detail_2.json",
+            "responses/news_detail_3.json",
+            "responses/news_detail_4.json",
         ],
     )
     @GET("/api/news/{id}")

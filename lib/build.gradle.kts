@@ -35,7 +35,7 @@ afterEvaluate {
         publications {
             create<MavenPublication>("release") {
                 from(components.findByName("release"))
-                groupId = "com.lcazalbasu"
+                groupId = "io.github.lcazalbasu"
                 artifactId = "mockresponseinterceptor"
                 version = AppVersions.VERSION_NAME
             }

@@ -43,7 +43,12 @@ fun NewsListScreen(
     val exception = state.exception
     if (exception != null) {
         ErrorDialogComponent(
-            onDismiss = { viewModel.onErrorDialogClosed() },
+            onDismiss = {
+                viewModel.onErrorDialogClosed()
+            },
+            onRetry = {
+                viewModel.refreshList()
+            },
             exception = exception,
         )
     }
