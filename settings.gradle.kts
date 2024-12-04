@@ -20,6 +20,10 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         mavenLocal()
+
+        maven {
+            url = uri("https://maven.pkg.github.com/lcazalbasu/mock-response-interceptor")
+        }
     }
 }
 

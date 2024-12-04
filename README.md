@@ -3,6 +3,22 @@
 The [MockResponseInterceptor] is an OkHttp interceptor that allows you to mock the response of a
 request.
 
+# Installation
+add the following maven repository to your settings.gradle.kts file:
+
+dependencyResolutionManagement {
+    repositories {
+        maven {
+            url = uri("https://maven.pkg.github.com/lcazalbasu/mock-response-interceptor")
+        }
+    }
+}
+
+add the following dependency to your build.gradle.kts file:
+
+implementation("com.lcazalbasu:mockresponseinterceptor:1.0.0")
+
+# Usage
 If you are using the [MockResponseInterceptor] in a test environment,
 you can use the **[Mock] annotation to enable or disable the mock response**.
 

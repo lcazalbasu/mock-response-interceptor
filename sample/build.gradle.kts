@@ -38,8 +38,8 @@ android {
 
 dependencies {
 
-    implementation(project(":lib"))
-//    implementation("io.github.lcazalbasu:mockresponseinterceptor:1.0.0")
+//    implementation(project(":lib"))
+    implementation("com.lcazalbasu:mockresponseinterceptor:1.0.0")
 
     implementation(libs.gson)
     implementation(libs.retrofit)
